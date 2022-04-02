@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>Portfolio Website</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Main Start -->
 
     <div class="main">
-        <!-- Home Section Start -->
-        <section class="home-section">
-            <div class="container">
-                <div class="row">
-                    <div class="home-text">
-                        <p>Hello, I'm</p>
-                        <h1>Gaël GRANGE</h1>
-                        <h2>developer junior</h2>
-
-                    </div>
-                    <div class="home-img">
-                        <div class="img-box">
-                            <img src="img/profile-img.png" alt="profile-img">
-                        </div>
-                    </div>
-                </div>
+      <!-- Home Section Start -->
+      <section class="home-section align-items-center hidden">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-text">
+              <p>Hello, I'm</p>
+              <h1>Gaël GRANGE</h1>
+              <h2>developer junior</h2>
+              <a href="#" class="btn">more about me</a>
+              <a href="#" class="btn">portfolio</a>
             </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img src="img/profile-img.png" alt="profile-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
 
-
-        </section>
-        <!-- Home Section End -->
+      <!-- About Section Start -->
+      <section class="about-section sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>about me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img src="img/about-img.png" alt="about-img" />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aspernatur incidunt cum sapiente, praesentium nemo in adipisci a
+                accusamus, nihil eligendi quod facilis cupiditate iure labore,
+                placeat doloribus non? Fuga, vitae.
+              </p>
+              <h3>skills</h3>
+              <div class="skills">
+                <div class="skill-item">html</div>
+                <div class="skill-item">css</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">python</div>
+                <div class="skill-item">angular</div>
+              </div>
+              <div class="about-tabs">
+                <button type="button" class="tab-item active" data-target="#education">education</button>
+                <button type="button" class="tab-item" data-target="#experience">experience</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
     </div>
-
-
-
 
     <!-- Main End -->
 
-
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
