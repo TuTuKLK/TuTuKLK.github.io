@@ -320,22 +320,22 @@
           </div>
           <div class="row">
             <div class="contact-form">
-              <form>
+              <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="row">
                   <div class="input-group">
-                    <input type="text" placeholder="Name" class="input-control" required>
+                    <input type="text" id="name" placeholder="Name" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="email" class="input-control" required>
+                    <input type="email" id="email" placeholder="Email" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="subject" class="input-control" required>
+                    <input type="text" id="subject" placeholder="Subject" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <textarea placeholder="message" class="input-control" required></textarea>
+                    <textarea id="message" placeholder="Message" class="input-control" required></textarea>
                   </div>
                   <div class="submit-btn">
-                    <button type="submit" class="btn">send message</button>
+                    <button type="submit" class="btn">Send message</button>
                   </div>
                 </div>
               </form>
@@ -354,6 +354,7 @@
                 <div class="social-links">
                   <a href="https://www.linkedin.com/in/ga%C3%ABl-grange-870b5a213/" target="_blank"><i class="fab fa-linkedin"></i></a>
                   <a href="https://github.com/TuTuKLK" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.codewars.com/users/TuTu%20Kelkun" target="_blank"><i class="fa fa-user"></i></a>
                 </div>
               </div>
             </div>
@@ -385,5 +386,22 @@
 
 
     <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script>
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "Portfolio.contact.tutuklk@gmail.com",
+          Password : "mdp1234@",
+          To : 'geant.vert42@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact from portfolio",
+          Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script> -->
+    
   </body>
 </html>
