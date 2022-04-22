@@ -93,3 +93,17 @@ function portfolioItemDetails(portfolioItem){
     document.querySelector(".pp-body").innerHTML =
     portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
+
+function sendEmail(){
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "Portfolio.contact.tutuklk@gmail.com",
+    Password : "mdp1234@",
+    To : 'geant.vert42@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact from portfolio",
+    Body : "And this is the body"
+}).then(
+    message => alert(message)
+);
+}
