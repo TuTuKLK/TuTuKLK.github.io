@@ -97,7 +97,7 @@ function portfolioItemDetails(portfolioItem){
 const btn = document.getElementById('button');
 
 document.getElementById('form')
-  .addEventListener('submit', function(event) {
+.addEventListener('submit', function(event) {
   event.preventDefault();
 
   btn.value = 'Sending...';
@@ -107,10 +107,12 @@ document.getElementById('form')
 
   emailjs.sendForm(serviceID, templateID, this)
   .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+    btn.value = 'Send Email';
+    alert('Sent!');
+    
   }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+    btn.value = 'Send Email';
+    alert(JSON.stringify(err));
   });
-  });
+  document.getElementById("form").reset();
+});
