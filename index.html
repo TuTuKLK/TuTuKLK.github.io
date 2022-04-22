@@ -178,7 +178,7 @@
               <div class="portfolio-item-thumbnail">
                 <img src="img/portfolio/1.jpg" alt="portfolio item thumb">
               </div>
-              <h3 class="portfolio-item-title">education course website portfolio 1</h3>
+              <h3 class="portfolio-item-title">Portfolio</h3>
               <button type="button" class="btn view-project-btn">view project</button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -186,10 +186,9 @@
                 </div>
                 <div class="general-info">
                   <ul>
-                    <li>Created - <span>april 2022 portfolio 1</span></li>
-                    <li>technologies used - <span>html, css portfolio 1</span></li>
-                    <li>role - <span>frontend</span></li>
-                    <li>view online - <span><a href="#" target="_blank">www.domain.com portfolio 1</a></span></li>
+                    <li>Created - <span>april 2022</span></li>
+                    <li>technologies used - <span>html, css, javascript</span></li>
+                    <li>view Git repository - <span><a href="https://github.com/TuTuKLK/TuTuKLK.github.io" target="_blank">Github</a></span></li>
                   </ul>
                 </div>
               </div>
@@ -320,22 +319,22 @@
           </div>
           <div class="row">
             <div class="contact-form">
-              <form>
+              <form id="form">
                 <div class="row">
                   <div class="input-group">
-                    <input type="text" placeholder="Name" class="input-control" required>
+                    <input name="name" id="name" type="text" placeholder="Name" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="email" class="input-control" required>
+                    <input name="email" id="email" type="text" placeholder="email" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="subject" class="input-control" required>
+                    <input name="subject" id="subject" type="text" placeholder="subject" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <textarea placeholder="message" class="input-control" required></textarea>
+                    <textarea name="message" id="message" placeholder="message" class="input-control" required></textarea>
                   </div>
                   <div class="submit-btn">
-                    <button type="submit" class="btn">send message</button>
+                    <button type="submit" class="btn" id="button" value="Send Email">send message</button>
                   </div>
                 </div>
               </form>
@@ -352,8 +351,10 @@
               <div class="contact-info-item">
                 <h3>follow me</h3>
                 <div class="social-links">
-                  <a href="https://www.linkedin.com/in/ga%C3%ABl-grange-870b5a213/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  <a href="https://github.com/TuTuKLK" target="_blank"><i class="fab fa-github"></i></a>
+                  <a class="hovertext" href="https://www.linkedin.com/in/ga%C3%ABl-grange-870b5a213/" target="_blank" data-hover="LinkedIn"><i class="iconify" data-icon="akar-icons:linkedin-box-fill"></i></a>
+                  <a class="hovertext" href="https://github.com/TuTuKLK" target="_blank" data-hover="Github"><i class="iconify" data-icon="akar-icons:github-fill"></i></a>
+                  <a class="hovertext" href="https://www.codewars.com/users/TuTu%20Kelkun" target="_blank" data-hover="Codewars"><i class="iconify" data-icon="cib:codewars"></i></a>
+                  <a class="hovertext" href="https://www.codewars.com/users/TuTu%20Kelkun" target="_blank" data-hover="Udemy"><i class="iconify" data-icon="simple-icons:udemy"></i></a>
                 </div>
               </div>
             </div>
@@ -385,5 +386,13 @@
 
 
     <script src="js/script.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('mpkw0WoR6OXpxXcNm')
+    </script>
   </body>
 </html>
