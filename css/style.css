@@ -8,16 +8,16 @@ Variables
 ------------------------------- */
 :root{
     /* --main-color: #e02f6b; */
-    --main-color: #600F73;
+    --main-color: #067790;
     --blue: #0000ff;
-    /* --blue-dark: #18293c; */
-    --blue-dark: #023340;
-    --orange: #ffa500;
+    --blue-dark: #18293c;
+    /* --blue-dark: #023340; */
+    --orange: #ff0000a1;
     --green-yellow: #cddc39;
     /* --pink-light: #efa2b4; */
-    --pink-light: #032580;
+    --pink-light: #175755c5;
     /* --cyan-light: #aef1ee; */
-    --cyan-light: #038054;
+    --cyan-light: #b0f2b5a2;
     --white: #fff;
     --white-alpha-40: rgba(255,255,255,0.40);
     --white-alpha-25: rgba(255,255,255,0.25);
